@@ -11,7 +11,7 @@ class StatusBar {
 
     private let statusItem: NSStatusItem
 
-    private let menuController = Menu()
+    private let menu = Menu()
 
     init() {
 
@@ -26,6 +26,6 @@ class StatusBar {
             )
         }
 
-        statusItem.menu = menuController.menu
+        statusItem.menu = menu.menu
     }
 }
